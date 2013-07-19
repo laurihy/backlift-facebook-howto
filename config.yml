@@ -57,7 +57,7 @@ optimize: no
 # is set to 'yes', all requests to URLs that don't match a file or API 
 # endpoint will be routed to the index.html file.
 
-autoroute: no
+autoroute: yes
 
 # development: determine if page should show Backlift admin tab on
 # bottom right corner. If 'yes', then tab is show, 'no' hides it.
@@ -68,22 +68,3 @@ development: yes
 # Facebook on app's settigns page with name "App Secret".
 
 facebook_secret: ''
-
-# packages: define sets of additional libraries or functionality that
-# can be downloaded during app installation. Top-level key defines 
-# package name. Inside package, each key is a folder name, and each 
-# value is a github repository or gist. Github repos may specify a tag 
-# or branch via a tree url.
-
-packages:
-  include:
-    admin: 
-    - github.com/backlift/backlift-admin
-    libraries: 
-    - github.com/backlift/jquery-bundle/tree/20130406
-    - github.com/backlift/bootstrap-bundle/tree/20130406
-
-# require: which of the packages must be installed during 
-
-require:
-- include
