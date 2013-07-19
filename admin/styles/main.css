@@ -1,84 +1,32 @@
-body {
-  margin-top: 0;
+html, body {
+  min-height: 100% !important;
+  background: #eee;
+}
+
+.row {
+  width: 100% !important;
+  min-width: 100% !important;
+  padding: 20px;
 }
 
 #header {
-  padding: 20px 0;
-  background: url('../images/graphpaper.jpg');
+  background: #fff;
+  box-shadow: 0 1px 10px 2px #ccc;
 }
 
-#section-middle {
-  background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
-  -moz-box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
-  -webkit-box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #D4D7DB;
+#header h1 {
+  margin: 0;
+  padding: 0;
 }
 
-#content {
-      margin-top: 25px;
+#main {
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  background: #fff; 
+  float: left;
 }
 
-table, pre, h1, .row {
-  margin-bottom: 20px;
-}
-
-pre {
-  background-color: #EEF;
-  border: 1px solid #CDD;
-}
-pre.build-err {
-  background-color: white;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  border: none;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  background-color: #FFF5FA;
-}
-
-#filelist ul {
-  list-style-type: none;
-  margin-left: 0;
-}
-
-#filelist ul.subfolder {
-  margin-left: 15px;
-}
-
-#filterfields {
-  display: inline;
-}
-
-.hidden {
-  display: none;
-}
-
-#filterfields.hidden {
-  display: none;
-}
-
-.tablesorter-header-inner {
-  cursor: pointer;
-}
-
-.modal form {
-  margin-bottom: 0px;
-}
-
-.well form.form-inline {
-  margin-bottom: 0px;
-}
-
-.codetext {
-  font-family: Courier;
-}
-
-a {
-  cursor: pointer;
+.button, button {
+  border-width: 0px !important;
+  -webkit-box-shadow: 0 0 0 #fff !important;
 }
